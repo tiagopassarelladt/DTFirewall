@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6E24950D-8413-4F05-BEF6-257C753FFA8F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DTFirewall.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demo\DemoFirewall.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DTFirewall">
+        <MSBuild Projects="DTFirewall.dproj"/>
+    </Target>
+    <Target Name="DTFirewall:Clean">
+        <MSBuild Projects="DTFirewall.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DTFirewall:Make">
+        <MSBuild Projects="DTFirewall.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DemoFirewall">
+        <MSBuild Projects="Demo\DemoFirewall.dproj"/>
+    </Target>
+    <Target Name="DemoFirewall:Clean">
+        <MSBuild Projects="Demo\DemoFirewall.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DemoFirewall:Make">
+        <MSBuild Projects="Demo\DemoFirewall.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DTFirewall;DemoFirewall"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DTFirewall:Clean;DemoFirewall:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DTFirewall:Make;DemoFirewall:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

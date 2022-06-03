@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/03 19:00:36.000.911,=rtl.dcp</Transaction>
+    <Transaction>2021/11/03 19:00:51.000.144,C:\Users\TiagoPassarella\OneDrive\Documentos\Embarcadero\Studio\Projects\Package1.dproj=C:\Users\TiagoPassarella\OneDrive\Documentos\Embarcadero\Studio\Projects\DTFirewall.dproj</Transaction>
+    <Transaction>2021/11/03 19:02:22.000.648,=D:\Dropbox\Componentes\DTFirewall\DTFirewall.pas</Transaction>
+    <Transaction>2021/11/03 19:02:40.000.418,D:\Dropbox\Componentes\DTFirewall\DTFirewall.pas=D:\Dropbox\Componentes\DTFirewall\Firewall.pas</Transaction>
+    <Transaction>2021/11/03 19:02:46.000.137,C:\Users\TiagoPassarella\OneDrive\Documentos\Embarcadero\Studio\Projects\DTFirewall.dproj=D:\Dropbox\Componentes\DTFirewall\DTFirewall.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
